@@ -7,11 +7,7 @@ const TodoItem = ({it,onDelete,onUpdate}) => {
     const [modify, setModify] = useState(false);
     const mContent = useRef();
     //const [mContent , setMContent] = useState('');
-
-    useEffect(() => {
-      console.log(it);
-    }, [it]);
-
+    
     return (
         <div>
             {modify?(

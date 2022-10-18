@@ -16,6 +16,7 @@ const ItemList = ({item,setItem}) => {
         }
         setItem([...item, {id : cnt.current++, content : inputContent.current.value}]);
         inputContent.current.value = '';
+        
         /* if(!inputContent){
             alert("일정을 입력해주세요.");
             return;
@@ -29,7 +30,7 @@ const ItemList = ({item,setItem}) => {
             item.filter((it) => 
                 it.id !== targetId
             )
-        )
+        );
     }
 
     const modify = (targetId, targetContent) => {
